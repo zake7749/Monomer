@@ -1,11 +1,11 @@
 # Monomer: Return to step-by-step Reasoning
 
 <p align="left">
-    🤗 <a href="https://huggingface.co/zake7749/Monomer-24b-preview-e1">Hugging Face</a>&nbsp; ｜ 🚀<a href="https://github.com/zake7749/Monomer">Github</a>&nbsp; ｜ &nbsp;📑 <a href="#">Paper</a>&nbsp;
+    🤗 <a href="https://huggingface.co/zake7749/Monomer-24b-preview-e1">Hugging Face</a>&nbsp; ｜ 
+    🚀<a href="https://github.com/zake7749/Monomer">Github</a>&nbsp; ｜ 
+    📑 <a href="#">Paper</a>&nbsp; ｜ 
+    🎮 <a href="https://zake7749.github.io/Monomer/doc/">Website</a>
 </p>
-<div style="text-align: center;">
-  <img src="https://i.imgur.com/gHQLsaF.png" alt="kyara"/>
-</div>
 
 ## Introduction
 
