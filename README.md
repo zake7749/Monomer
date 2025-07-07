@@ -7,9 +7,13 @@
     🎮 <a href="https://zake7749.github.io/Monomer/doc/">Website</a>
 </p>
 
+**News:** We have released the preview writer-sereis: `Monomer-Writer` on Huggingface, which shows strong ability across various chinese writing tasks on [Chinese-Writing-Benchmark](https://github.com/zake7749/Chinese-Writing-Bench).
+
+<img width="749" alt="image" src="https://github.com/user-attachments/assets/f3c054c8-a8c6-4c8f-b668-f8350b6adffe" />
+
 ## Introduction
 
-Monomer is a collection of reasoning language models (RLMs), currently focused on both Chinese and English scenarios, particularly in planning, design, and writing tasks.
+Monomer is a collection of language models focused on Chinese scenarios, particularly in planning, design, and writing tasks.
 
 Unlike other RLMs, Monomer provides clear, step-by-step reasoning trajectories, supervised by a joint reward model to ensure coherence, depth, and structure.
 
@@ -78,6 +82,30 @@ The model would response:
 
 而這位，這位橫跨歐亞、讓世界顫抖的偉大統帥，這位跛足的帝國建立者，他的名字——是帖木兒（Tamerlane）。這個名字，本身就是一首充滿鐵血與榮光的史詩。他的故事，至今仍在撒馬爾罕的古老街巷裡迴盪，在歷史的長河中，閃爍著冷冽而永恆的光芒。
 
+## Method
+
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/44e5951a-c228-4bcb-ba1b-8286f54ae861" />
+
+We present a structured workflow  for generating and refining AI content through a structured, multi-step process.
+
+1. Define: We start with a Scenario (Persona, Constraints, Seed, Context, Style) to create a detailed project scope.
+
+2. Instruct: The Instruction Generator converts the scenario into a focused task.
+
+3. Plan & Draft: The Monomer Planner analyzes the task, creates a plan, and writes a first draft.
+
+4. Review & Refine: The Monomer Reviewer critiques the draft and provides actionable feedback.
+
+5. Iterate: A crucial feedback loop sends the feedback to the planning stage for iterative improvement, ensuring the final output is polished and meets all requirements.
+
+This systematic approach enables us to generate diverse, high-quality instruction-response pairs at scale. With rejection sampling, we build a high quality subset to train the [Monomer-Writer Series](https://huggingface.co/zake7749/Monomer-24B-Writer-Preview).
+
+---
+
+
+> **Note:** The following usage and example introduce the [Monomer-Planner-preview-e1-2505](https://huggingface.co/zake7749/Monomer-24b-preview-e1), which currently shows weaker performance compared to the Monomer Writer series, such as [Monomer-Writer-preview-2507](https://huggingface.co/zake7749/Monomer-24B-Writer-Preview). We recommend using the Writer series for now, as it is faster and more robust. The latest Planner is still being tuned and will be updated in the future.
+
+---
 
 ## Usage
 
@@ -787,7 +815,3 @@ $$\mu_s \geq \frac{1.97 \, \text{m/s}^2}{10 \, \text{m/s}^2} \approx 0.197$$
 ---
 
 For the other show cases, feel free to chat with the [preview model on Huggingface](https://huggingface.co/zake7749/Monomer-24b-preview-e1)
-
-## Benchmark
-
-The benchmark is currently a work in progress and will be released once the final version is completed.
